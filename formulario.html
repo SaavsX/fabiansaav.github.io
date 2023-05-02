@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="informacion sobre el videojuego fifa 23">
+    <meta name="author" content="Saavedra Fabian">
+    <link rel="shortcut icon" href="../img/iconoea.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <nav id="acesibilidad">
+        <ul>
+            <li><a href="#art-form"><em>Saltar a Contenido</em></a></li>
+            <li><a href="#contenedor-enlaces"><em>Saltar a Navegacion</em></a></li>
+        </ul>
+    </nav>
+
+    <header id="titulo">
+        <h1><em>Fifa 23</em></h1>
+    </header>
+    <section id="contenedor-menu">
+            <a href="#contenedor-menu"><figure id="abrir"><img src="../img/burger_menu.png" alt="abrir"></figure></a>
+            <a href="#"><figure id="cerrar"><img src="../img/cerrar_menu.png" alt=""></figure></a>
+        <nav>
+            <ul id="contenedor-enlaces">
+                <li><a href="../index.html"><em>Inicio</em></a></li>
+                <li><a href="tabla.html"><em>Tabla</em></a></li>
+                <li><a href="galeria.html"><em>Galeria</em></a></li>
+                <li><a href="formulario.html"><em>Formulario</em></a></li>
+            </ul>
+        </nav>
+    </section>
+    <main id="main-form">
+        <section>
+            <article id="art-form">
+                <form action="contacto.php" method="post" id="fromulario-cont">
+                    <fieldset>
+                        <legend><em>Contacto</em></legend>
+                        <section>
+                            <label for="nom"><em>Nombre</em></label>
+                            <input type="text" id="nom" name="nombre" placeholder="Nombre">
+                        </section>
+                        <section>
+                            <label for="correo"><em>Mail</em></label>
+                            <input type="email" id="correo" name="correo" placeholder="Correo electronico">
+                        </section>
+                        <section>
+                            <label for="tel"><em>Telefono</em></label>
+                            <input type="tel" id="tel" name="telefono" placeholder="Numero de telefono">
+                        </section>
+                        <section>
+                            <label for="mens"><em>Mensaje</em></label>
+                            <textarea name="mensaje" id="mens" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </section>
+                    </fieldset>
+                    <section id="botom-form">
+                        <section>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </section>
+                    </section>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <figcaption>&copy; Fabian Saavedra</figcaption>
+        </footer>
+</body>
+</html>

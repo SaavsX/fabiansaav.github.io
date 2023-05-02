@@ -1,0 +1,573 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*css general*/
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#acesibilidad {
+    background-color: gray;
+}
+
+header {
+    background-color: steelblue;
+}
+
+#contenedor-menu {
+    background-color: grey;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 1s ease 0s;
+}
+
+#contenedor-enlaces a:hover,  #contenedor-enlaces a:focus {
+    background-color:white;
+    color: black;
+}
+
+main {
+    background-color: steelblue;
+}
+
+/*fin css general*/
+ 
+/*css movil 320px-480px*/
+
+@media all and (min-width: 320px) {
+    /*menu acesibilidad*/
+    #acesibilidad ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #acesibilidad li {
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    .columnas {
+        padding: 1em;
+    }
+    /*header*/
+    h1 {
+        font-size: 2rem;
+        padding: 0.3em;
+    }
+
+    h2 {
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+        margin: 0.5em;
+    }
+
+    p {
+        margin: 0.5em;
+    }
+    /*menu*/
+    .menu-ace {
+        padding: 1em;
+    }
+
+    #contenedor-menu img{
+        width: 10vw;   
+    }
+
+    #contenedor-menu #cerrar {
+        display: none;/*ocultar imagen x*/
+    }
+
+    #contenedor-menu #contenedor-enlaces {
+        height: 0;/*cambiar altura a 0*/
+        transition: heigth 1s ease;/*efecto de transicion*/
+        overflow: hidden;/*ocultar lo que sobresalga*/
+    }
+
+    #contenedor-menu:target #abrir {
+        display: none;/*ocultar imagen hamburguesa*/
+    }
+
+    #contenedor-menu:target #cerrar {
+        display: block;/*mostrar imagen x*/
+    }
+
+    #contenedor-menu:target #contenedor-enlaces {
+        height: 8.7em;
+        transition: height 1s ease;
+    }
+
+    #contenedor-enlaces li {
+        margin-top: 0.3em;
+    }
+
+    #contenedor-enlaces a {
+        padding: 0.3em;
+        display: block;
+    }
+    /*tabla*/
+    #main-tab {
+        height: 90vh;
+    }
+
+    #main-tab section {
+        padding: 0.7em;
+        display: flex;
+        justify-content: center;
+    }
+
+    caption {
+        font-size: large;
+        margin-bottom: 0.5em;
+    }
+
+    #tabla {
+        border-collapse: collapse;
+    }
+
+    #tabla th, #tabla td {
+        border: 0.2em solid black;
+        padding: 0.5em;
+    }
+
+    th {
+        background-color: slategray;
+        color: aliceblue;
+    }
+
+    td {
+        background-color: grey;
+        color: aliceblue;
+    }
+
+    #tabla #tabla-encabezado {
+        display: none;
+    }
+
+    #tabla tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tabla td:nth-of-type(1)::before {
+        content:"OS";
+    }
+
+    #tabla td:nth-of-type(2)::before {
+        content:"Prosesador";
+    }
+
+    #tabla td:nth-of-type(3)::before {
+        content:"Memoria";
+    }
+
+    #tabla td:nth-of-type(4)::before {
+        content:"Almacenamiento";
+    }
+
+    #tabla td:nth-of-type(5)::before {
+        content:"Grafica";
+    }
+
+    #tabla td:nth-of-type(6)::before {
+        content:"DirectX";
+    }
+
+    #tabla td:before {
+        background-color:slategray;
+        padding: 0.3em;
+    }
+
+    /*galeria*/
+    #galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #galeria figure {
+        width: 80%;
+    }
+
+    #galeria img {
+        width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+        width: 100%;
+    }
+
+    main figure {
+        max-width: 95%;
+        margin: 1.5em;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    main figcaption {
+        justify-content: center;
+    }
+
+    main figure img {
+        width: 18em;
+    }
+    /*formulario*/
+    #main-form {
+        padding: 3em;
+    }
+
+    form {
+        background-color: grey;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0.5em;
+    }
+
+    form section, fieldset {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    form input {
+        margin-bottom: 0.5em;
+        padding: 0.5em;
+        border: 0.1em solid black;
+        font-size: 1,2em;
+    }
+
+    form label {
+        width: 100%;
+    }
+
+    legend {
+        margin: 0.5em;
+    }
+
+    #botom-form {
+        margin-top: 1em;
+    }
+}
+/*fin css movil*/
+
+/*css tablets 481px-768px*/
+@media all and (min-width: 480px) {
+    .columnas {
+        padding: 1em;
+    }
+    /*header*/
+    h1 {
+        font-size: 2rem;
+        padding: 0.3em;
+    }
+
+    h2 {
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+        margin: 0.5em;
+    }
+
+    p {
+        margin: 0.5em;
+    }
+    /*menu*/
+    #contenedor-menu img{
+        width: 8vw;   
+    }
+
+    #contenedor-menu:target #contenedor-enlaces {
+        height: 8.5em;
+        transition: height 1s ease;
+    }
+
+    #contenedor-enlaces li {
+        margin-top: 0.3em;
+    }
+
+    #contenedor-enlaces a {
+        padding: 0.3em;
+        display: block;
+    }
+
+}
+
+/*fin css tablets*/
+
+/*css Pantallas pequeñas, laptops 769px-1024px*/
+
+@media all and (min-width: 768px) {
+    #inicio {
+        height: auto;
+    }
+
+    .columnas {
+        padding: 1em;
+        column-count: 2;
+        column-gap: 3%;
+        column-rule: black solid ;
+    }
+    /*header*/
+    h1 {
+        font-size: 4rem;
+        padding: 0.3em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 0.5em;
+    }
+
+    p {
+        font-size: 1.35rem;
+        margin: 0.5em;
+    }
+    /*menu*/
+    #contenedor-menu img{
+        width: 8vw;   
+    }
+
+    #contenedor-menu:target #contenedor-enlaces {
+        height: 14em;
+        transition: height 1s ease;
+    }
+
+    #contenedor-enlaces li {
+        margin-top: 0.3em;
+    }
+
+    #contenedor-enlaces a {
+        font-size: 1.35rem;
+        padding: 0.5em;
+        display: block;
+    }
+
+    /*galeria*/
+    #main-gal {
+        padding: 1em;
+        height: 80vh;
+    }
+
+    #galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #galeria figure {
+        width: 40%;
+    }
+
+    #galeria img {
+        width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/*fin css Pantallas pequeñas, laptops*/
+
+/*css Pantalla grande, PC 1025px-1200px*/
+
+@media all and (min-width: 1024px) {
+    #inicio {
+        height: auto;
+    }
+
+    .columnas {
+        column-count: 3;
+        column-gap: 3%;
+        column-rule: black solid ;
+        padding: 2em;
+    }
+    /*header*/
+    h1 {
+        font-size: 2.5rem;
+        padding: 0.5em;
+    }
+
+    h2 {
+        margin-bottom: 0.5em;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        margin: 0.5em;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin: 0.5em;
+    }
+    /*menu*/
+    #abrir, #cerrar {
+        display: none;/*ocultar imagen menu*/
+    }
+
+    #contenedor-enlaces {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #contenedor-enlaces a {
+        font-size: small;
+        padding: 0.7em;
+        margin: 0.5em;
+        display: block;
+    }
+
+    #contenedor-menu #contenedor-enlaces{
+        height: auto;
+    }
+    /*tabla*/
+    #main-tab {
+        height: 80vh;
+    }
+    
+    #main-tab section {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tabla th, #tabla td {
+        width: 10vw;
+    }
+
+    #tabla #tabla-encabezado {
+        display: table-row;
+    }
+
+    #tabla tr {
+        display: table-row;
+    }
+
+    #tabla td::before {
+        display: none;
+    }
+    /*galeria*/
+    #main-gal {
+        padding: 1em;
+        height: 90vh;
+    }
+
+    #galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #galeria figure {
+        width: 25%;
+    }
+
+    #galeria img {
+        width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+        width: 100%;
+    }
+    /*formulario*/
+    legend {
+        margin: auto;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    form {
+        width: 60%;
+        margin: 0 auto;
+        padding: 0.5em;
+    }
+
+    form section, fieldset {
+        display: flex;
+        flex-direction: row;
+        align-items: self-start;
+        font-size: 1em;
+    }
+
+    form input {
+        padding: 0.3em;
+        border: 0.1em solid black;
+        font-size: 1em;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    fieldset section {
+        width: 50vw;
+    }
+
+    fieldset input {
+        width: 270vw;
+    }
+
+    fieldset textarea {
+        width: 270vw;
+    }
+
+    #botom-form section{
+        margin-left: 6.7vw;
+    }
+
+    #botom-form input {
+        padding: 0.5em;
+        font-size: large;
+        margin-left: 1vw;
+    }
+
+    textarea {
+        border: 0.1em solid black;
+        padding: 0.4em;
+    }
+}
+
+/*fin css Pantalla grande, PC 1025px-1200px*/
+
+/*css Pantallas extra grandes, TV 1201px y más*/
+
+
+/*fin Pantallas extra grandes, TV*/
